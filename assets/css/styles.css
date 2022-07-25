@@ -1,0 +1,111 @@
+/* Elementos DOM */
+body {
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    background: rgb(0 0 0 / 85%);
+}
+
+p {
+    text-align: justify;
+}
+
+
+/* Clases */
+.navbar-brand>img {
+    width: 1.5em;
+}
+
+.bg-col {
+    background: rgb(0 0 0 / 75%);
+    border-radius: 1rem;
+}
+
+.border-round {
+    border-radius: 2rem;
+}
+
+.logo-footer {
+    width: 6.5rem;
+}
+
+.carousel-img {
+    width: 45vw;
+    height: 37vh;
+}
+
+
+/* Input form */
+.input-group {
+    position: relative;
+}
+
+.input-label {
+    color: #FFFFFF;
+    position: absolute;
+    transform: translate(10px, 5px);
+    transition: transform .25s;
+}
+
+.input:focus+.input-label,
+.input:valid+.input-label {
+    transform:
+        translate(0px, -25px) scale(.8);
+    color: #FFFFFF;
+    padding-inline: 5px;
+}
+
+.input:is(:focus, :valid) {
+    outline-color: #D1C5FC;
+}
+
+
+/* Hero section */
+#Hero-section {
+    background-image: url('../img/hero.jpg');
+    background-size: cover;
+    background-position: right;
+    background-repeat: no-repeat;
+}
+
+
+/* Carousel section */
+#Carousel>div {
+    width: min-content;
+}
+
+
+/* Footer section */
+#Footer {
+    background-color: #000000;
+}
+
+
+/* Media queries */
+@media screen and (min-width: 200px) and (max-width: 767.98px) {
+    /* Smartphones */
+
+    .carousel-img {
+        width: 85vw !important;
+        height: auto !important;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199.98px) {
+    /* Tablets y notebooks */
+
+    .carousel-img {
+        width: 85vw !important;
+        height: auto !important;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    /* Desktops */
+
+    #Hero-section {
+        height: 100vh !important;
+    }
+}
